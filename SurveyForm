@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial scale=1.0"/>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <header>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description"><em>Help us to know you a little bit and get better for you!</em></p>
+    </header>
+     <form id="survey-form">
+        <div class="personal-data">
+            <label id="name-label" for="name"> <strong>Name</strong> </label>
+                <input id="name" type="text" placeholder="Enter your name" required/>
+            <label id="email-label" for="email"> <strong>E-mail</strong> </label>
+                <input id="email" type="email" placeholder="Enter your e-mail" required/>
+            <label id="number-label" for="number"> <strong>Age</strong> (optional) </label>
+                <input id="number" type="number" min="17" max="115" placeholder="Your age"/>
+        </div>     
+  <fieldset>
+  <legend>What do you do on your daily basis?</legend>
+    <select id="dropdown">
+      <option> Select one</option>
+      <option> Student</option>
+      <option> Full time job</option>
+      <option> Part time job</option>
+      <option> Searching for job</option>
+      <option>Other</option>
+    </select>
+  </fieldset>
+
+<fieldset>
+    <legend>Which courses at freeCodeCamp are you interest in? <em>(you can choose more than one!)</em></legend>
+  <input type="checkbox" value="web-design"/><label for="web-design"> Web Design </label>
+  <input type="checkbox" value="JS"/><label for="JS"> JavaScript </label>
+  <input type="checkbox" value="data"/><label for="data"> Data </label>
+  <input type="checkbox" value="front-end"/><label for="front-end"> Front-end Dev </label>
+  <input type="checkbox" value="back-end"/><label for="back-end"> Back-end Dev </label>
+  <input type="checkbox" value="quality-assurance"/><label for="quality-assurance"> Quality Assurance </label>
+  <input type="checkbox" value="python"/><label for="python"> Python </label>
+  <input type="checkbox" value="interview"/><label for="interview"> Coding interview prep </label>
+</fieldset>
+
+  <fieldset>      
+    <legend>Would you recommend freeCodeCamp?</legend>
+    <input name="recommend" type="radio" value="absolutely" checked/><label for="absolutely"> Absolutely </label>
+    <input name="recommend" type="radio" value="maybe"/><label for="maybe"> Maybe </label>
+    <input name="recommend" type="radio" value="not-sure"/><label for="not-sure"> I'm not sure </label>
+</fieldset>
+
+<label class="coment"> Any comments, suggestions or anything you want us to know? <textarea rows="5" cols="35" placeholder="Write here..."></textarea>
+</label>
+
+<button id="submit" type="submit"> <strong>Submit</strong> </button>
+      </form>
+  </body>
+</html>
